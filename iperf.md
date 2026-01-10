@@ -27,4 +27,48 @@ BandModifier5GHz=0.0
 BandModifier2_4GHz=1.0
 ```
 
-## Test results
+## Test results using iPerf3
+``` mermaid
+---
+title: "Internal WiFi / LAN"
+---
+flowchart LR
+    a@{shape: rect, label: "MacBook Client"}
+    b@{shape: rect, label: "Router"}
+    c@{shape: rect, label: "iMac Server"}
+    a-- WiFi -->b
+    b-- LAN -->c
+```
+``` mermaid
+---
+title: "Internal WiFi"
+---
+flowchart LR
+    a@{shape: rect, label: "MacBook Client"}
+    b@{shape: rect, label: "Router"}
+    c@{shape: rect, label: "iMac Server"}
+    a-- WiFi -->b
+    b-- WiFi -->c
+```
+``` mermaid
+---
+title: "External WiFi / LAN"
+---
+flowchart LR
+    a@{shape: rect, label: "MacBook Client"}
+    b@{shape: rect, label: "Router"}
+    d@{shape: rect, label: "External iPerf Server"}
+    a-- WiFi -->b
+    b-- LAN -->d
+```
+``` mermaid
+---
+title: "External LAN"
+---
+flowchart LR
+    b@{shape: rect, label: "Router"}
+    c@{shape: rect, label: "iMac Client"}
+    d@{shape: rect, label: "External iPerf Server"}
+    c-- LAN -->b
+    b-- LAN -->d
+```
