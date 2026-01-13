@@ -27,7 +27,7 @@ BandModifier5GHz=0.0
 BandModifier2_4GHz=1.0
 ```
 
-## Test results using iPerf3
+## Tests using iPerf3
 ``` mermaid
 ---
 title: "Internal WiFi / LAN"
