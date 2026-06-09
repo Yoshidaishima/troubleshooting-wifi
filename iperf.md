@@ -59,7 +59,7 @@ flowchart LR
     b@{shape: rect, label: "Router"}
     d@{shape: rect, label: "External iPerf Server"}
     a-- WiFi -->b
-    b-- LAN -->d
+    b-- WAN -->d
 ```
 ``` mermaid
 ---
@@ -70,5 +70,5 @@ flowchart LR
     c@{shape: rect, label: "iMac Client"}
     d@{shape: rect, label: "External iPerf Server"}
     c-- LAN -->b
-    b-- LAN -->d
+    b-- WAN -->d
 ```
